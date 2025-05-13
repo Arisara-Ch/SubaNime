@@ -1,0 +1,113 @@
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0;
+  text-align: left !important;
+  box-sizing: border-box;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+}
+
+/*.carousel-caption {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  text-align: left;
+}*/
+
+.carousel-caption .caption-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 15px;
+  /*margin-bottom: -40px;*/
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffff;
+  box-sizing: border-box;
+}
+
+.caption-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px 20px;
+  border-radius: 0;
+  gap: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  /*max-height: 100%;*/
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-slide {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel,
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /*max-height: 400px;  หรือปรับตามความต้องการ */
+}
+
+.play-button:hover {
+  background-color: #f8f9fa;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* มือถือ: ปรับความสูง carousel */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 360px;
+  }
+
+   .caption-bg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .carousel-caption {
+    padding: 0 10px 15px;
+  }
+
+   .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  .play-button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}

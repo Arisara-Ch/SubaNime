@@ -1,0 +1,48 @@
+.recommendations, .trending {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  margin-top: 1rem;
+}
+
+.recommendations h2, .trending h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;  /* ทำให้แถวห่อเป็นแถวถัดไป */
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: center;  /* จัดเรียงให้อยู่กึ่งกลาง */
+}
+
+.anime-item {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex: 0 0 calc(16.666% - 1rem);  /* 16.666% เพื่อให้มี 6 ไอเท็มใน 1 แถว */
+  max-width: calc(16.666% - 1rem); /* 16.666% - gap */
+  text-align: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.anime-item img {
+  width: 100%;
+  height: auto;
+}
+
+.anime-item p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #343a40;
+}

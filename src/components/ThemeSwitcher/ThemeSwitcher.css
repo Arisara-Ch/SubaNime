@@ -1,0 +1,63 @@
+/*.theme-switcher {
+  margin-left: 8px; ขยับนิดหน่อย ถ้าจำเป็น 
+}*/
+
+.theme-switcher-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-switcher-button:hover {
+    background-color: #f1f1f1; /* หรือใช้สีที่ต่างจากพื้นหลัง */
+    border-color: #888;        /* ทำให้กรอบเด่นขึ้น */
+    cursor: pointer;
+}
+
+.theme-switcher .dropdown-toggle {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #504887;
+  border: 1px solid #d5d1fc; /* เพิ่มกรอบ */
+}
+
+/* ลูกศร dropdown */
+.theme-switcher .dropdown-toggle::after {
+  vertical-align: middle;
+  filter: brightness(0.5); /* ทำให้ลูกศรมืดขึ้นเล็กน้อย */
+}
+
+.theme-switcher .dropdown-toggle:hover{
+  background-color: #504887 !important;
+  border-color: #504887 !important;
+  border: 1px solid;
+}
+
+.theme-switcher .dropdown-toggle:focus {
+  background-color:#206dba !important;
+  border-color: #206dba !important;
+}
+
+.theme-switcher .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #d5d1fc;
+}
+
+.theme-switcher .dropdown-item {
+  color: #504887;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.theme-switcher .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.theme-switcher .dropdown-item.active,
+.theme-switcher .dropdown-item:active {
+  background-color: #d5d1fc !important;
+  color: #504887 !important;
+}

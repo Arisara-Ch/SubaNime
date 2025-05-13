@@ -1,0 +1,386 @@
+.custom-navbar {
+  background-color: #504887;
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: auto;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #cccccc !important;
+}
+
+.nav-item.dropdown.show .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown-menu {
+  background-color: #34403a;
+}
+
+.dropdown-item {
+  color: #504887 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #d5d1fc !important;
+  color: #3e2e81 !important;
+}
+
+.form-control {
+  background-color: #495057;
+  color: #ffffff;
+  border: none;
+}
+
+.form-control::placeholder {
+  color: #cccccc;
+}
+
+.btn-outline-success.btn-custom {
+  background-color: #ffffff;
+  color: #504887;
+  border-color: #ffffff;
+  margin-right: 5px;
+}
+
+.btn-outline-success.btn-custom:hover {
+  background-color: #403670;
+  color: #ffffff;
+  border-color: #403670;
+}
+
+.btn-outline-success.btn-custom:active {
+  background-color: #206dba !important;
+  border-color: #206dba !important;
+}
+
+.btn-outline-success.btn-custom:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.theme-switcher .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.navbar .theme-switcher {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Hide dropdown arrow on larger screens */
+#navbarDropdownProfile::after {
+  display: none;
+}
+
+/* Settings for larger screens */
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+.profile-text {
+  display: none;
+}
+
+.profile-dropdown .dropdown-menu {
+  right: 0; /* Align the menu to the right edge of the profile icon */
+  left: auto; /* Ensure it doesn't align to the left */
+}
+
+.profile-dropdown .dropdown-menu.show {
+  display: block !important;
+  top: calc(100% + 5px); /* Adjust the vertical alignment */
+}
+
+.profile-dropdown #userDropdown {
+  display: none;
+}
+
+.profile-dropdown .w-10.h-10.rounded-full.cursor-pointer {
+  cursor: pointer;
+}
+
+.profile-dropdown:hover #userDropdown {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.recommendations h2,
+.trending h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Mobile view adjustments */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item-news {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+  }
+
+  .nav-item.dropdown {
+    position: relative;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    transform: none;
+    width: 100%;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #fff;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: block !important;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: none;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Profile menu specific styles */
+  .profile-menu {
+    width: 100%;
+  }
+
+  .profile-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .profile-dropdown .profile-dropdown-menu {
+    position: static;
+    width: 100%;
+    align-items: center;
+  }
+
+  .profile-dropdown .dropdown-menu {
+    width: 100%;
+  }
+
+  .profile-dropdown .profile-dropdown-menu.show {
+    display: block !important;
+  }
+
+   .profile-dropdown .dropdown-item {
+        font-size: 0.875rem; /* Set the font-size back to the desired value for mobile */
+    padding: 0.5rem 1rem;
+  }
+
+  .profile-dropdown .profile-dropdown-menu .dropdown-item {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .profile-dropdown .profile-dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .profile-dropdown .profile-dropdown-menu .dropdown-divider {
+    margin: 0.5rem 0;
+  }
+
+  .profile-dropdown-menu li {
+    width: 100%;
+  }
+
+  .profile-dropdown-menu li a {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .profile-dropdown .py-1 {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .profile-dropdown .py-1 a {
+    width: 100%;
+  }
+
+  .profile-item {
+    order: -1;
+  }
+
+  .profile-dropdown {
+    order: 1; /* เปลี่ยนลำดับให้เมนู Profile อยู่ด้านหน้า */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+  }
+
+  .profile-logo {
+    display: none;
+  }
+
+  .profile-dropdown .profile-logo {
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างรูปโปรไฟล์กับเมนู */
+  }
+
+  .profile-text {
+    display: inline;
+    color: #ffffff;
+  }
+
+  .navbar-nav .dropdown-menu[aria-labelledby="navbarDropdownPractice"].show {
+    display: block !important;
+  }
+
+  #navbarDropdownProfile::after {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.255em;
+    margin-top: -0.19em;
+  }
+
+  #navbarDropdownProfile.profile-menu .dropdown-item {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+    min-width: 50rem !important;
+  }
+
+  /* Ensure Practice dropdown matches Profile dropdown styles */
+  #navbarDropdownPractice::after {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.255em;
+    margin-top: -0.19em;
+  }
+
+  .navbar-nav .dropdown-menu[aria-labelledby="navbarDropdownPractice"] {
+    position: absolute !important;
+    float: none;
+    width: 100% !important;
+    margin-top: -4px;
+    background-color: #fff;
+    display: none;
+  }
+
+  .navbar-nav .dropdown-menu[aria-labelledby="navbarDropdownPractice"].show {
+    display: block;
+  }
+
+  .navbar-nav
+    .dropdown-menu[aria-labelledby="navbarDropdownPractice"]
+    .dropdown-item {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-nav .dropdown-menu[aria-labelledby="navbarDropdownPractice"] {
+    order: 2;
+  }
+
+  .nav-item.dropdown.show ~ .news-link {
+    margin-top: 140px;
+  }
+
+  .profile-dropdown .dropdown-menu {
+    position: static;
+    width: 100%;
+  }
+
+  .profile-dropdown .dropdown-menu.show {
+    display: block;
+  }
+}
